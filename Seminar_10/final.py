@@ -97,15 +97,7 @@ def exponentiation(point):
         direct = 1
         
     if(point == 2):
-        print('Введите первое комплексное число:')
-        comp_num_one_valid = float(input('\nДействительная часть: '))
-        comp_num_one_image = float(input('Мнимая часть: '))
-        print('Введите второе комлпексное число:')
-        comp_num_two_valid = float(input('\nДействительная часть: '))
-        comp_num_two_image = float(input('Мнимая часть: '))
-        
-        num_one = complex(comp_num_one_valid, comp_num_one_image)
-        num_two = complex(comp_num_two_valid, comp_num_two_image)
+        num_one, num_two = complex_input()
         result = num_one * num_two
         print(f"\n{num_one}^{num_two} = {result}\n")
         direct = 2
